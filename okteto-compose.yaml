@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  worker:
+    build: .
+    environment:
+      - APP_ID=${APP_ID}
+      - API_HASH=${API_HASH}
+      - TG_BOT_TOKEN=${TG_BOT_TOKEN}
+      - OWNER_ID=${OWNER_ID}
+      - CHANNEL_ID=${CHANNEL_ID}
